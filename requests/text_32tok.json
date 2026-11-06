@@ -1,0 +1,14 @@
+{
+  "model": "local-model",
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 32,
+  "ignore_eos": true,
+  "cache_prompt": false,
+  "messages": [
+    {
+      "role": "user",
+      "content": "ROI4 a,m,t,b pct. rise/bottom=F;quiet=C;else=N. Reply [0-3][FNC]. f1;0:9,11,+0,10;1:14,15,+1,15;2:20,20,+2,21;3:25,24,+2,26"
+    }
+  ]
+}

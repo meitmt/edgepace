@@ -1,0 +1,34 @@
+# Template for your own application: examples/minimal_app (periodic memory-bound jobs at
+# 30 Hz, built by scripts/build.sh as build/examples/minimal_app) beside Qwen2.5-1.5B F16
+# answering a short request every 1.6 s.  Copy this file, point [foreground] and [llm]
+# at your application and model, then:
+#   tools/edgepace profile examples/workloads/minimal_app_qwen25_1p5b_f16.toml
+# Relative paths are relative to this file.
+
+name = "minimal_app_qwen25_1p5b_f16"
+
+[platform]
+power_mode = "MAXN_SUPER"
+default_conf = "../../platform/orin_nano_super_default.conf"
+video_clocks = "dynamic"
+
+[foreground]
+# must stop after {frames} jobs and publish {task_page} and {progress_page}
+command = "../../build/examples/minimal_app --frames {frames} --task-page {task_page} --progress-page {progress_page} --period-us 33333 --deadline-us 33333 --work-mb 64 --passes 8 --threads 4"
+period_ms = 33.333
+deadline_ms = 33.333
+
+[llm]
+model = "../../models/qwen2.5-1.5b-instruct-fp16.gguf"
+plan = ""
+request = "../../requests/text_4tok.json"
+period_ms = 1600
+align = "frame"
+max_tokens = 4
+freshness_ms = 1800
+context_size = 2048
+
+[profile]
+mode = "quick"
+quick_frames = 600
+horizon_ms = 10           # throughput first; raise for fewer misses (docs/WORKLOAD.md)

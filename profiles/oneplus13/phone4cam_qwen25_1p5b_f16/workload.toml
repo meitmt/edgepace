@@ -1,0 +1,44 @@
+# The phone four-camera foreground (foreground/android) and Qwen2.5-1.5B F16
+# on a OnePlus 13 (Snapdragon 8 Elite; LLM on the Hexagon NPU through geniex's
+# llama.cpp).  The foreground's main thread runs on CPU 0 and its workers on the
+# prime cluster (4-7).  Set up the phone first (android/README.md); paths in
+# [foreground] and llm.model are device paths.
+#   tools/edgepace profile examples/workloads/oneplus13_phone4cam_qwen25_1p5b_f16.toml
+
+name = "oneplus13_phone4cam_qwen25_1p5b_f16"
+
+[platform]
+device = "android"
+adb = "adb"
+device_root = "/data/local/tmp/edgepace"
+
+[foreground]
+command = "/data/local/tmp/edgepace/bin/fourcam_phone --video /data/local/tmp/edgepace/media/input_loop70s.mp4 --frames {frames} --warmup-frames 12 --period-us 33333 --deadline-us 33333 --condition llm --main-cpu 0 --worker-cpus 4,5,6,7 --output {phase_dir}/foreground.csv --semantic-output {phase_dir}/semantic_records.csv --task-page {task_page} --progress-page {progress_page}"
+period_ms = 33.333
+deadline_ms = 33.333
+
+[llm]
+model = "/data/local/tmp/geniex/models/Qwen2.5-1.5B-Instruct-F16/Qwen2.5-1.5B-Instruct-F16.gguf"
+plan = ""
+request = "../../requests/text_4tok.json"
+period_ms = 1600
+align = "frame"
+max_tokens = 4
+freshness_ms = 1800
+parallel = 1
+extra_streams = 0
+context_size = 2048
+
+[profile]
+objective = "miss"
+min_retention = 0.6
+miss_budget = 0.02
+horizons = [4, 8, 12, 16, 20, 24, 32]
+frames = 1800
+# the phone cools down between phases anyway, so longer sweep phases cost
+# little and halve the miss-count noise (one frame = 0.06%)
+sweep_frames = 1800
+# the S check against the phone's own memory contention: four back-to-back NPU decodes
+stress_llm_request = "../../requests/text_256tok.json"
+stress_llm_streams = 4
+stress_binary = ""

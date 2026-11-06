@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "name": "light4cam_qwen25_1p5b_f16",
+  "status": "profiled",
+  "created": "2026-10-24T00:02:43",
+  "source": "{repo}/runs/profile_light_h24_20261023/out",
+  "workload": {
+    "model": "{models}/Qwen2.5-1.5B-Instruct-F16.gguf",
+    "plan": "cut_plan.json",
+    "foreground": "{repo}/build/foreground/fourcam_light --video /path/to/paper_clip_1080p30_hevc.mp4 --frames {frames} --warmup-frames 12 --period-us 33333 --deadline-us 33333 --condition llm --output {phase_dir}/foreground.csv --semantic-output {phase_dir}/semantic_records.csv --task-page {task_page} --progress-page {phase_dir}/progress.page --active-cameras 4 --partial-camera-period 0",
+    "request": "{repo}/requests/text_4tok.json",
+    "llm_period_ms": 1600.0,
+    "llm_align": "frame",
+    "parallel": 1,
+    "llm_extra_streams": 0,
+    "period_us": 33333,
+    "deadline_us": 33333,
+    "freshness_ms": 1800.0,
+    "max_tokens": 4,
+    "context_size": 2048,
+    "batch_size": 256,
+    "ubatch_size": 256,
+    "prompt_cache": false
+  },
+  "sampler_args": [
+    "--gate-margin",
+    "0.05",
+    "--gate-persistence",
+    "3",
+    "--gate-min-ms",
+    "6",
+    "--sample-interval-ms",
+    "4",
+    "--gate-persistence",
+    "2",
+    "--stall-threshold",
+    "0.765297",
+    "--miss-rate-threshold",
+    "8.67706e+08",
+    "--mpki-threshold",
+    "77.3386"
+  ],
+  "server_env": {
+    "EDGEPACE_ONLINE_RHO": "1",
+    "EDGEPACE_RHO_W_DEMAND": "0.15",
+    "EDGEPACE_RHO_W_STALL": "0.7",
+    "EDGEPACE_RHO_W_URGENCY": "0.7",
+    "EDGEPACE_RHO_THETA_LOW": "0.5060",
+    "EDGEPACE_RHO_THETA_HIGH": "0.8060",
+    "EDGEPACE_RHO_HORIZON_MS": "16"
+  },
+  "decision": {
+    "status": "profiled",
+    "horizon_ms": 16.0,
+    "miss_rate": 0.009195402298850575,
+    "retention": 0.6784552200136104
+  },
+  "fingerprint": {
+    "power_mode": "MAXN_SUPER",
+    "cpu_khz": [
+      "1728000"
+    ],
+    "gpu_hz": "1020000000",
+    "cpu_gpu_pinned": true,
+    "server_sha256": "cdc2278ef992d5650c60a5d0b2f4b5ca9b43ccf88dea5d6f20230cb8b61e6b6f",
+    "policy_sha256": "2a3f0372bbb9b3cae900b18f9ad15b99d4ba0f48a01a671054bb981811b6b063",
+    "sampler_sha256": "117f89c71a66d1331c9c89af76326ad41f12e542e1be6ab0e4a9c61f997c08d3",
+    "model": {
+      "path": "{models}/Qwen2.5-1.5B-Instruct-F16.gguf",
+      "bytes": 3093669376,
+      "mtime_ns": 1779077685862848337
+    }
+  }
+}

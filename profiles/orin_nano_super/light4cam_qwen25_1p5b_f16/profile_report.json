@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "platform": {
+    "power_mode": "MAXN_SUPER",
+    "cpu": {
+      "cpu0": {
+        "min": "1728000",
+        "max": "1728000"
+      },
+      "cpu1": {
+        "min": "1728000",
+        "max": "1728000"
+      },
+      "cpu2": {
+        "min": "1728000",
+        "max": "1728000"
+      },
+      "cpu3": {
+        "min": "1728000",
+        "max": "1728000"
+      },
+      "cpu4": {
+        "min": "1728000",
+        "max": "1728000"
+      },
+      "cpu5": {
+        "min": "1728000",
+        "max": "1728000"
+      }
+    },
+    "gpu": {
+      "min": "1020000000",
+      "max": "1020000000"
+    },
+    "cpu_gpu_pinned": true,
+    "locked": true
+  },
+  "args": {
+    "model": "{models}/Qwen2.5-1.5B-Instruct-F16.gguf",
+    "plan": "{repo}/runs/plan_profile_qwen_f16_20261021/plan/cut_plan.json",
+    "foreground": "{repo}/build/foreground/fourcam_light --video /path/to/paper_clip_1080p30_hevc.mp4 --frames {frames} --warmup-frames 12 --period-us 33333 --deadline-us 33333 --condition llm --output {phase_dir}/foreground.csv --semantic-output {phase_dir}/semantic_records.csv --task-page {task_page} --progress-page {phase_dir}/progress.page --active-cameras 4 --partial-camera-period 0",
+    "output_dir": "{repo}/runs/profile_light_h24_20261023/out",
+    "frames": "1800",
+    "skip_frames": "30",
+    "gate": "--gate-margin 0.05 --gate-persistence 3 --gate-min-ms 6",
+    "no_sampler": "False",
+    "sampler_args": "",
+    "rho_scales": "",
+    "min_pmu_coverage": "0.9",
+    "priority": "balanced",
+    "priority_bias": "None",
+    "llm_period_ms": "1600.0",
+    "llm_align": "frame",
+    "period_us": "33333",
+    "deadline_us": "33333",
+    "freshness_ms": "1800.0",
+    "max_tokens": "4",
+    "parallel": "1",
+    "llm_extra_streams": "0",
+    "server": "{repo}/build/llama/bin/llama-server",
+    "policy_library": "{repo}/build/policy/libedgepace_policy.so",
+    "sampler": "{repo}/monitor/build/pmu_sampler",
+    "request": "{repo}/requests/text_4tok.json",
+    "host": "127.0.0.1",
+    "port": "18432",
+    "server_timeout": "180.0",
+    "foreground_start_timeout": "120.0",
+    "context_size": "2048",
+    "batch_size": "256",
+    "ubatch_size": "256",
+    "prompt_cache": "False",
+    "required_power_mode": "MAXN_SUPER",
+    "allow_unlocked_profile": "False",
+    "sweep_frames": "900",
+    "stress_frames": "900",
+    "runtime_sampler": "--sample-interval-ms 4 --gate-persistence 2",
+    "horizons": "12,16,20,24",
+    "w_demand": "0.15",
+    "w_stall": "0.7",
+    "w_urgency": "0.7",
+    "u_thresholds": "0.2226,0.5226",
+    "min_retention": "0.6",
+    "stress_binary": "{external}/gpu_stress",
+    "stress_memory_mb": "384",
+    "stall_auc_min": "0.6"
+  },
+  "solo": {
+    "miss_rate": 0.0011299435028248588,
+    "response_ms": {
+      "p10": 24.117404,
+      "p50": 26.272839,
+      "p90": 28.784916,
+      "p95": 29.558113,
+      "p99": 31.686253,
+      "max": 34.020856
+    },
+    "pipeline_windows": 8750,
+    "reference_scales": {
+      "rule": "max(p99, 2 * p95) of solo pipeline windows",
+      "miss_rate": 867706336.1539187,
+      "miss_rate_p50": 287402449.5652109,
+      "mpki": 77.3386394104126,
+      "mpki_p50": 25.134353900512206,
+      "stall": 0.7652967627030178,
+      "stall_p50": 0.25606667919355125
+    },
+    "published": {
+      "demand_p50": 0.2408804481246543,
+      "demand_p90": 0.27334648882024304,
+      "stall_p50": 0.35321186960235845,
+      "stall_p90": 0.40365244618211965
+    }
+  },
+  "stress": {
+    "stall_auc": 0.951602488999974,
+    "mpki_auc": 0.4139225181598063,
+    "stall_rise": 0.31321940251994684,
+    "miss_rate": 0.03103448275862069,
+    "w_stall": 0.7
+  },
+  "thresholds": {
+    "u_thresholds": [
+      0.2226,
+      0.5226
+    ],
+    "shift": 0.28338037594034904,
+    "theta_low": 0.5059803759403491,
+    "theta_high": 0.805980375940349
+  },
+  "unmanaged": {
+    "miss_rate": 0.1310344827586207,
+    "llm_rate": 8.436830933219426,
+    "llm": {
+      "requests": 19,
+      "completed": 19,
+      "fresh": 19,
+      "completed_per_s": 0.6552700728722347,
+      "latency_ms": {
+        "p10": 333.483715,
+        "p50": 345.012917,
+        "p90": 366.073822,
+        "p95": 367.840665,
+        "p99": 547.278611,
+        "max": 547.278611
+      },
+      "output_tokens": 57,
+      "active_s": 6.756091292,
+      "tokens_per_active_s": 8.436830933219426
+    }
+  },
+  "sweep": [
+    {
+      "horizon_ms": 12.0,
+      "miss_rate": 0.029885057471264367,
+      "response_ms": {
+        "p10": 24.557962,
+        "p50": 27.28518,
+        "p90": 31.472678,
+        "p95": 32.517263,
+        "p99": 34.317942,
+        "max": 38.860034
+      },
+      "llm_rate": 5.989872616568408,
+      "retention": 0.7099671267541593,
+      "trace_events": {
+        "hold_begin": 247,
+        "submit": 2242,
+        "complete": 2242,
+        "admit": 1456,
+        "hold_end": 157
+      }
+    },
+    {
+      "horizon_ms": 16.0,
+      "miss_rate": 0.009195402298850575,
+      "response_ms": {
+        "p10": 24.407173,
+        "p50": 27.138584,
+        "p90": 30.949093,
+        "p95": 32.001122,
+        "p99": 33.089236,
+        "max": 36.640026
+      },
+      "llm_rate": 5.724011987015019,
+      "retention": 0.6784552200136104,
+      "trace_events": {
+        "admit": 1414,
+        "submit": 2242,
+        "complete": 2242,
+        "hold_begin": 298,
+        "hold_end": 201
+      }
+    },
+    {
+      "horizon_ms": 20.0,
+      "miss_rate": 0.013793103448275862,
+      "response_ms": {
+        "p10": 24.50202,
+        "p50": 27.386623,
+        "p90": 30.725643,
+        "p95": 31.73226,
+        "p99": 33.711239,
+        "max": 35.521965
+      },
+      "llm_rate": 5.289770438705643,
+      "retention": 0.6269854736424249,
+      "trace_events": {
+        "admit": 1237,
+        "submit": 2242,
+        "complete": 2242,
+        "hold_begin": 352,
+        "hold_end": 231
+      }
+    },
+    {
+      "horizon_ms": 24.0,
+      "miss_rate": 0.016091954022988506,
+      "response_ms": {
+        "p10": 24.404776,
+        "p50": 27.222468,
+        "p90": 30.526206,
+        "p95": 31.523892,
+        "p99": 34.039299,
+        "max": 39.777115
+      },
+      "llm_rate": 4.959805562131294,
+      "retention": 0.5878754240057614,
+      "trace_events": {
+        "admit": 1009,
+        "submit": 2242,
+        "hold_begin": 361,
+        "complete": 2242,
+        "hold_end": 198
+      }
+    }
+  ],
+  "decision": {
+    "status": "profiled",
+    "horizon_ms": 16.0,
+    "miss_rate": 0.009195402298850575,
+    "retention": 0.6784552200136104
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "batch": 256,
+  "cache": {
+    "hit": true,
+    "path": "{repo}/build/plan-cache-android/plan_qwen2_28_pf1505b7b_3093669376_1779077685000000000_f1_c2048_b256_u256.json"
+  },
+  "context": 2048,
+  "model": {
+    "architecture": "qwen2",
+    "expert_count": 0,
+    "file_type": 1,
+    "layer_count": 28,
+    "mtime_ns": 1779077685000000000,
+    "path": "/data/local/tmp/geniex/models/Qwen2.5-1.5B-Instruct-F16/Qwen2.5-1.5B-Instruct-F16.gguf",
+    "size": 3093669376
+  },
+  "parent_prototype": "G1-adaptive-static-slo",
+  "phases": {
+    "decode": {
+      "body_boundary_count": 29,
+      "body_max_runtime_ms": 2.234687,
+      "candidate_count": 30,
+      "candidate_runtime_ms": [
+        2.108281,
+        1.992448,
+        1.893229,
+        2.051093,
+        2.122031,
+        2.057448,
+        2.126718,
+        2.099375,
+        2.064479,
+        2.112187,
+        2.089688,
+        2.1075,
+        2.148177,
+        2.139948,
+        2.209166,
+        2.234063,
+        2.086146,
+        2.160364,
+        2.154323,
+        2.234687,
+        2.223855,
+        2.136771,
+        2.211094,
+        2.163594,
+        2.161927,
+        2.162188,
+        2.196355,
+        2.171407,
+        0.251198,
+        8.648385
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "end_boundary": 0,
+          "estimated_runtime_ms": 2.108281,
+          "start_boundary": 0,
+          "terminal": false
+        },
+        {
+          "chunk_id": 1,
+          "end_boundary": 1,
+          "estimated_runtime_ms": 1.992448,
+          "start_boundary": 1,
+          "terminal": false
+        },
+        {
+          "chunk_id": 2,
+          "end_boundary": 2,
+          "estimated_runtime_ms": 1.893229,
+          "start_boundary": 2,
+          "terminal": false
+        },
+        {
+          "chunk_id": 3,
+          "end_boundary": 3,
+          "estimated_runtime_ms": 2.051093,
+          "start_boundary": 3,
+          "terminal": false
+        },
+        {
+          "chunk_id": 4,
+          "end_boundary": 4,
+          "estimated_runtime_ms": 2.122031,
+          "start_boundary": 4,
+          "terminal": false
+        },
+        {
+          "chunk_id": 5,
+          "end_boundary": 5,
+          "estimated_runtime_ms": 2.057448,
+          "start_boundary": 5,
+          "terminal": false
+        },
+        {
+          "chunk_id": 6,
+          "end_boundary": 6,
+          "estimated_runtime_ms": 2.126718,
+          "start_boundary": 6,
+          "terminal": false
+        },
+        {
+          "chunk_id": 7,
+          "end_boundary": 7,
+          "estimated_runtime_ms": 2.099375,
+          "start_boundary": 7,
+          "terminal": false
+        },
+        {
+          "chunk_id": 8,
+          "end_boundary": 8,
+          "estimated_runtime_ms": 2.064479,
+          "start_boundary": 8,
+          "terminal": false
+        },
+        {
+          "chunk_id": 9,
+          "end_boundary": 9,
+          "estimated_runtime_ms": 2.112187,
+          "start_boundary": 9,
+          "terminal": false
+        },
+        {
+          "chunk_id": 10,
+          "end_boundary": 10,
+          "estimated_runtime_ms": 2.089688,
+          "start_boundary": 10,
+          "terminal": false
+        },
+        {
+          "chunk_id": 11,
+          "end_boundary": 11,
+          "estimated_runtime_ms": 2.1075,
+          "start_boundary": 11,
+          "terminal": false
+        },
+        {
+          "chunk_id": 12,
+          "end_boundary": 12,
+          "estimated_runtime_ms": 2.148177,
+          "start_boundary": 12,
+          "terminal": false
+        },
+        {
+          "chunk_id": 13,
+          "end_boundary": 13,
+          "estimated_runtime_ms": 2.139948,
+          "start_boundary": 13,
+          "terminal": false
+        },
+        {
+          "chunk_id": 14,
+          "end_boundary": 14,
+          "estimated_runtime_ms": 2.209166,
+          "start_boundary": 14,
+          "terminal": false
+        },
+        {
+          "chunk_id": 15,
+          "end_boundary": 15,
+          "estimated_runtime_ms": 2.234063,
+          "start_boundary": 15,
+          "terminal": false
+        },
+        {
+          "chunk_id": 16,
+          "end_boundary": 16,
+          "estimated_runtime_ms": 2.086146,
+          "start_boundary": 16,
+          "terminal": false
+        },
+        {
+          "chunk_id": 17,
+          "end_boundary": 17,
+          "estimated_runtime_ms": 2.160364,
+          "start_boundary": 17,
+          "terminal": false
+        },
+        {
+          "chunk_id": 18,
+          "end_boundary": 18,
+          "estimated_runtime_ms": 2.154323,
+          "start_boundary": 18,
+          "terminal": false
+        },
+        {
+          "chunk_id": 19,
+          "end_boundary": 19,
+          "estimated_runtime_ms": 2.234687,
+          "start_boundary": 19,
+          "terminal": false
+        },
+        {
+          "chunk_id": 20,
+          "end_boundary": 20,
+          "estimated_runtime_ms": 2.223855,
+          "start_boundary": 20,
+          "terminal": false
+        },
+        {
+          "chunk_id": 21,
+          "end_boundary": 21,
+          "estimated_runtime_ms": 2.136771,
+          "start_boundary": 21,
+          "terminal": false
+        },
+        {
+          "chunk_id": 22,
+          "end_boundary": 22,
+          "estimated_runtime_ms": 2.211094,
+          "start_boundary": 22,
+          "terminal": false
+        },
+        {
+          "chunk_id": 23,
+          "end_boundary": 23,
+          "estimated_runtime_ms": 2.163594,
+          "start_boundary": 23,
+          "terminal": false
+        },
+        {
+          "chunk_id": 24,
+          "end_boundary": 24,
+          "estimated_runtime_ms": 2.161927,
+          "start_boundary": 24,
+          "terminal": false
+        },
+        {
+          "chunk_id": 25,
+          "end_boundary": 25,
+          "estimated_runtime_ms": 2.162188,
+          "start_boundary": 25,
+          "terminal": false
+        },
+        {
+          "chunk_id": 26,
+          "end_boundary": 26,
+          "estimated_runtime_ms": 2.196355,
+          "start_boundary": 26,
+          "terminal": false
+        },
+        {
+          "chunk_id": 27,
+          "end_boundary": 27,
+          "estimated_runtime_ms": 2.171407,
+          "start_boundary": 27,
+          "terminal": false
+        },
+        {
+          "chunk_id": 28,
+          "end_boundary": 28,
+          "estimated_runtime_ms": 0.251198,
+          "start_boundary": 28,
+          "terminal": false
+        },
+        {
+          "chunk_id": 29,
+          "end_boundary": 29,
+          "estimated_runtime_ms": 8.648385,
+          "start_boundary": 29,
+          "terminal": true
+        }
+      ],
+      "encoded_map": "0:2.108281,1:1.992448,2:1.893229,3:2.051093,4:2.122031,5:2.057448,6:2.126718,7:2.099375,8:2.064479,9:2.112187,10:2.089688,11:2.107500,12:2.148177,13:2.139948,14:2.209166,15:2.234063,16:2.086146,17:2.160364,18:2.154323,19:2.234687,20:2.223855,21:2.136771,22:2.211094,23:2.163594,24:2.161927,25:2.162188,26:2.196355,27:2.171407,28:0.251198,29:8.648385",
+      "terminal_boundary": 29,
+      "terminal_runtime_ms": 8.648385
+    },
+    "prefill": {
+      "body_boundary_count": 57,
+      "body_max_runtime_ms": 10.770209,
+      "candidate_count": 58,
+      "candidate_runtime_ms": [
+        2.048229,
+        7.195208,
+        1.781406,
+        7.134636,
+        1.687032,
+        7.129219,
+        1.784583,
+        7.13448,
+        1.702552,
+        7.120104,
+        1.784531,
+        7.129063,
+        1.771041,
+        7.170156,
+        1.758645,
+        7.161927,
+        1.781875,
+        7.142969,
+        1.768854,
+        7.123437,
+        1.783802,
+        7.163438,
+        1.766719,
+        7.190157,
+        1.738698,
+        7.198333,
+        1.74125,
+        7.182813,
+        1.750989,
+        7.19125,
+        1.813073,
+        7.182239,
+        1.773802,
+        7.158594,
+        1.726041,
+        7.166563,
+        1.797448,
+        10.770209,
+        1.808281,
+        7.152552,
+        1.821875,
+        7.177187,
+        1.803959,
+        7.169947,
+        1.818125,
+        7.164531,
+        1.811146,
+        7.216354,
+        1.781875,
+        7.1825,
+        1.798281,
+        7.178334,
+        1.771979,
+        7.175782,
+        1.772813,
+        1.811719,
+        0.3,
+        9.535052
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "end_boundary": 0,
+          "estimated_runtime_ms": 2.048229,
+          "start_boundary": 0,
+          "terminal": false
+        },
+        {
+          "chunk_id": 1,
+          "end_boundary": 1,
+          "estimated_runtime_ms": 7.195208,
+          "start_boundary": 1,
+          "terminal": false
+        },
+        {
+          "chunk_id": 2,
+          "end_boundary": 2,
+          "estimated_runtime_ms": 1.781406,
+          "start_boundary": 2,
+          "terminal": false
+        },
+        {
+          "chunk_id": 3,
+          "end_boundary": 3,
+          "estimated_runtime_ms": 7.134636,
+          "start_boundary": 3,
+          "terminal": false
+        },
+        {
+          "chunk_id": 4,
+          "end_boundary": 4,
+          "estimated_runtime_ms": 1.687032,
+          "start_boundary": 4,
+          "terminal": false
+        },
+        {
+          "chunk_id": 5,
+          "end_boundary": 5,
+          "estimated_runtime_ms": 7.129219,
+          "start_boundary": 5,
+          "terminal": false
+        },
+        {
+          "chunk_id": 6,
+          "end_boundary": 6,
+          "estimated_runtime_ms": 1.784583,
+          "start_boundary": 6,
+          "terminal": false
+        },
+        {
+          "chunk_id": 7,
+          "end_boundary": 7,
+          "estimated_runtime_ms": 7.13448,
+          "start_boundary": 7,
+          "terminal": false
+        },
+        {
+          "chunk_id": 8,
+          "end_boundary": 8,
+          "estimated_runtime_ms": 1.702552,
+          "start_boundary": 8,
+          "terminal": false
+        },
+        {
+          "chunk_id": 9,
+          "end_boundary": 9,
+          "estimated_runtime_ms": 7.120104,
+          "start_boundary": 9,
+          "terminal": false
+        },
+        {
+          "chunk_id": 10,
+          "end_boundary": 10,
+          "estimated_runtime_ms": 1.784531,
+          "start_boundary": 10,
+          "terminal": false
+        },
+        {
+          "chunk_id": 11,
+          "end_boundary": 11,
+          "estimated_runtime_ms": 7.129063,
+          "start_boundary": 11,
+          "terminal": false
+        },
+        {
+          "chunk_id": 12,
+          "end_boundary": 12,
+          "estimated_runtime_ms": 1.771041,
+          "start_boundary": 12,
+          "terminal": false
+        },
+        {
+          "chunk_id": 13,
+          "end_boundary": 13,
+          "estimated_runtime_ms": 7.170156,
+          "start_boundary": 13,
+          "terminal": false
+        },
+        {
+          "chunk_id": 14,
+          "end_boundary": 14,
+          "estimated_runtime_ms": 1.758645,
+          "start_boundary": 14,
+          "terminal": false
+        },
+        {
+          "chunk_id": 15,
+          "end_boundary": 15,
+          "estimated_runtime_ms": 7.161927,
+          "start_boundary": 15,
+          "terminal": false
+        },
+        {
+          "chunk_id": 16,
+          "end_boundary": 16,
+          "estimated_runtime_ms": 1.781875,
+          "start_boundary": 16,
+          "terminal": false
+        },
+        {
+          "chunk_id": 17,
+          "end_boundary": 17,
+          "estimated_runtime_ms": 7.142969,
+          "start_boundary": 17,
+          "terminal": false
+        },
+        {
+          "chunk_id": 18,
+          "end_boundary": 18,
+          "estimated_runtime_ms": 1.768854,
+          "start_boundary": 18,
+          "terminal": false
+        },
+        {
+          "chunk_id": 19,
+          "end_boundary": 19,
+          "estimated_runtime_ms": 7.123437,
+          "start_boundary": 19,
+          "terminal": false
+        },
+        {
+          "chunk_id": 20,
+          "end_boundary": 20,
+          "estimated_runtime_ms": 1.783802,
+          "start_boundary": 20,
+          "terminal": false
+        },
+        {
+          "chunk_id": 21,
+          "end_boundary": 21,
+          "estimated_runtime_ms": 7.163438,
+          "start_boundary": 21,
+          "terminal": false
+        },
+        {
+          "chunk_id": 22,
+          "end_boundary": 22,
+          "estimated_runtime_ms": 1.766719,
+          "start_boundary": 22,
+          "terminal": false
+        },
+        {
+          "chunk_id": 23,
+          "end_boundary": 23,
+          "estimated_runtime_ms": 7.190157,
+          "start_boundary": 23,
+          "terminal": false
+        },
+        {
+          "chunk_id": 24,
+          "end_boundary": 24,
+          "estimated_runtime_ms": 1.738698,
+          "start_boundary": 24,
+          "terminal": false
+        },
+        {
+          "chunk_id": 25,
+          "end_boundary": 25,
+          "estimated_runtime_ms": 7.198333,
+          "start_boundary": 25,
+          "terminal": false
+        },
+        {
+          "chunk_id": 26,
+          "end_boundary": 26,
+          "estimated_runtime_ms": 1.74125,
+          "start_boundary": 26,
+          "terminal": false
+        },
+        {
+          "chunk_id": 27,
+          "end_boundary": 27,
+          "estimated_runtime_ms": 7.182813,
+          "start_boundary": 27,
+          "terminal": false
+        },
+        {
+          "chunk_id": 28,
+          "end_boundary": 28,
+          "estimated_runtime_ms": 1.750989,
+          "start_boundary": 28,
+          "terminal": false
+        },
+        {
+          "chunk_id": 29,
+          "end_boundary": 29,
+          "estimated_runtime_ms": 7.19125,
+          "start_boundary": 29,
+          "terminal": false
+        },
+        {
+          "chunk_id": 30,
+          "end_boundary": 30,
+          "estimated_runtime_ms": 1.813073,
+          "start_boundary": 30,
+          "terminal": false
+        },
+        {
+          "chunk_id": 31,
+          "end_boundary": 31,
+          "estimated_runtime_ms": 7.182239,
+          "start_boundary": 31,
+          "terminal": false
+        },
+        {
+          "chunk_id": 32,
+          "end_boundary": 32,
+          "estimated_runtime_ms": 1.773802,
+          "start_boundary": 32,
+          "terminal": false
+        },
+        {
+          "chunk_id": 33,
+          "end_boundary": 33,
+          "estimated_runtime_ms": 7.158594,
+          "start_boundary": 33,
+          "terminal": false
+        },
+        {
+          "chunk_id": 34,
+          "end_boundary": 34,
+          "estimated_runtime_ms": 1.726041,
+          "start_boundary": 34,
+          "terminal": false
+        },
+        {
+          "chunk_id": 35,
+          "end_boundary": 35,
+          "estimated_runtime_ms": 7.166563,
+          "start_boundary": 35,
+          "terminal": false
+        },
+        {
+          "chunk_id": 36,
+          "end_boundary": 36,
+          "estimated_runtime_ms": 1.797448,
+          "start_boundary": 36,
+          "terminal": false
+        },
+        {
+          "chunk_id": 37,
+          "end_boundary": 37,
+          "estimated_runtime_ms": 10.770209,
+          "start_boundary": 37,
+          "terminal": false
+        },
+        {
+          "chunk_id": 38,
+          "end_boundary": 38,
+          "estimated_runtime_ms": 1.808281,
+          "start_boundary": 38,
+          "terminal": false
+        },
+        {
+          "chunk_id": 39,
+          "end_boundary": 39,
+          "estimated_runtime_ms": 7.152552,
+          "start_boundary": 39,
+          "terminal": false
+        },
+        {
+          "chunk_id": 40,
+          "end_boundary": 40,
+          "estimated_runtime_ms": 1.821875,
+          "start_boundary": 40,
+          "terminal": false
+        },
+        {
+          "chunk_id": 41,
+          "end_boundary": 41,
+          "estimated_runtime_ms": 7.177187,
+          "start_boundary": 41,
+          "terminal": false
+        },
+        {
+          "chunk_id": 42,
+          "end_boundary": 42,
+          "estimated_runtime_ms": 1.803959,
+          "start_boundary": 42,
+          "terminal": false
+        },
+        {
+          "chunk_id": 43,
+          "end_boundary": 43,
+          "estimated_runtime_ms": 7.169947,
+          "start_boundary": 43,
+          "terminal": false
+        },
+        {
+          "chunk_id": 44,
+          "end_boundary": 44,
+          "estimated_runtime_ms": 1.818125,
+          "start_boundary": 44,
+          "terminal": false
+        },
+        {
+          "chunk_id": 45,
+          "end_boundary": 45,
+          "estimated_runtime_ms": 7.164531,
+          "start_boundary": 45,
+          "terminal": false
+        },
+        {
+          "chunk_id": 46,
+          "end_boundary": 46,
+          "estimated_runtime_ms": 1.811146,
+          "start_boundary": 46,
+          "terminal": false
+        },
+        {
+          "chunk_id": 47,
+          "end_boundary": 47,
+          "estimated_runtime_ms": 7.216354,
+          "start_boundary": 47,
+          "terminal": false
+        },
+        {
+          "chunk_id": 48,
+          "end_boundary": 48,
+          "estimated_runtime_ms": 1.781875,
+          "start_boundary": 48,
+          "terminal": false
+        },
+        {
+          "chunk_id": 49,
+          "end_boundary": 49,
+          "estimated_runtime_ms": 7.1825,
+          "start_boundary": 49,
+          "terminal": false
+        },
+        {
+          "chunk_id": 50,
+          "end_boundary": 50,
+          "estimated_runtime_ms": 1.798281,
+          "start_boundary": 50,
+          "terminal": false
+        },
+        {
+          "chunk_id": 51,
+          "end_boundary": 51,
+          "estimated_runtime_ms": 7.178334,
+          "start_boundary": 51,
+          "terminal": false
+        },
+        {
+          "chunk_id": 52,
+          "end_boundary": 52,
+          "estimated_runtime_ms": 1.771979,
+          "start_boundary": 52,
+          "terminal": false
+        },
+        {
+          "chunk_id": 53,
+          "end_boundary": 53,
+          "estimated_runtime_ms": 7.175782,
+          "start_boundary": 53,
+          "terminal": false
+        },
+        {
+          "chunk_id": 54,
+          "end_boundary": 54,
+          "estimated_runtime_ms": 1.772813,
+          "start_boundary": 54,
+          "terminal": false
+        },
+        {
+          "chunk_id": 55,
+          "end_boundary": 55,
+          "estimated_runtime_ms": 1.811719,
+          "start_boundary": 55,
+          "terminal": false
+        },
+        {
+          "chunk_id": 56,
+          "end_boundary": 56,
+          "estimated_runtime_ms": 0.3,
+          "start_boundary": 56,
+          "terminal": false
+        },
+        {
+          "chunk_id": 57,
+          "end_boundary": 57,
+          "estimated_runtime_ms": 9.535052,
+          "start_boundary": 57,
+          "terminal": true
+        }
+      ],
+      "encoded_map": "0:2.048229,1:7.195208,2:1.781406,3:7.134636,4:1.687032,5:7.129219,6:1.784583,7:7.134480,8:1.702552,9:7.120104,10:1.784531,11:7.129063,12:1.771041,13:7.170156,14:1.758645,15:7.161927,16:1.781875,17:7.142969,18:1.768854,19:7.123437,20:1.783802,21:7.163438,22:1.766719,23:7.190157,24:1.738698,25:7.198333,26:1.741250,27:7.182813,28:1.750989,29:7.191250,30:1.813073,31:7.182239,32:1.773802,33:7.158594,34:1.726041,35:7.166563,36:1.797448,37:10.770209,38:1.808281,39:7.152552,40:1.821875,41:7.177187,42:1.803959,43:7.169947,44:1.818125,45:7.164531,46:1.811146,47:7.216354,48:1.781875,49:7.182500,50:1.798281,51:7.178334,52:1.771979,53:7.175782,54:1.772813,55:1.811719,56:0.300000,57:9.535052",
+      "terminal_boundary": 57,
+      "terminal_runtime_ms": 9.535052
+    }
+  },
+  "policy": "tail_aware_slo_online",
+  "profile_backend": {
+    "platform": {
+      "clocks": "LOCKED_CLOCKS cpu=policy0=1996800 policy6=2649600 gpu=1100000000 ddr=4761000 llcc=1211000",
+      "device": "android",
+      "lock_session": "/data/local/tmp/edgepace/runs/lock_20261025_065315",
+      "locked": true,
+      "power_mode": "fixed-performance"
+    },
+    "policy": "profile_static",
+    "policy_library": "/data/local/tmp/edgepace/lib/libedgepace_policy.so",
+    "request_payload": "{repo}/requests/text_4tok.json",
+    "requests": 3,
+    "runtime": "EdgePace (android overlay) on geniex llama.cpp, Hexagon HTP",
+    "server": "/data/local/tmp/edgepace/bin/llama-server"
+  },
+  "profile_statistic": "maximum submit-to-complete duration over three startup requests",
+  "prototype": "edgepace-fine-plan",
+  "schema_version": "edgepace.g2.tail_aware_cut.v1",
+  "selection": {
+    "priority_independent": true,
+    "slo_independent_geometry": true,
+    "strategy": "preserve_every_legal_boundary",
+    "terminal_policy": "isolate_final_output_tail"
+  },
+  "slo_assessment": {
+    "admissible": true,
+    "blockers": [],
+    "control_reference_ms": 11.111,
+    "deadline_ms": 33.333,
+    "freshness_ms": 1800.0,
+    "max_tokens": 4,
+    "phases": {
+      "decode": {
+        "body_max_runtime_ms": 2.234687,
+        "body_within_control_reference": true,
+        "terminal_runtime_ms": 8.648385,
+        "terminal_within_control_reference": true,
+        "terminal_within_hard_deadline": true
+      },
+      "prefill": {
+        "body_max_runtime_ms": 10.770209,
+        "body_within_control_reference": true,
+        "terminal_runtime_ms": 9.535052,
+        "terminal_within_control_reference": true,
+        "terminal_within_hard_deadline": true
+      }
+    },
+    "profiled_request_service_ms": 532.730157,
+    "reference_role": "body feasibility check only; never a coarsening target",
+    "request_service_within_freshness": true
+  },
+  "ubatch": 256
+}

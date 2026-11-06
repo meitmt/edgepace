@@ -1,0 +1,19 @@
+--- a/ggml/src/CMakeLists.txt
++++ b/ggml/src/CMakeLists.txt
+@@ -208,10 +208,12 @@
+             ggml-quants.h
+             gguf.cpp)
+ 
+-set_target_properties(ggml-base PROPERTIES
+-    VERSION ${GGML_VERSION}
+-    SOVERSION ${GGML_VERSION_MAJOR}
+-)
++if (NOT GGML_UNVERSIONED_SONAME)
++    set_target_properties(ggml-base PROPERTIES
++        VERSION ${GGML_VERSION}
++        SOVERSION ${GGML_VERSION_MAJOR}
++    )
++endif()
+ 
+ target_include_directories(ggml-base PRIVATE .)
+ if (GGML_BACKEND_DL)

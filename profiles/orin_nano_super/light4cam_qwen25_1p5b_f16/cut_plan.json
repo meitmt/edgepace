@@ -1,0 +1,794 @@
+{
+  "batch": 256,
+  "cache": {
+    "hit": false,
+    "path": "{repo}/build/plan-cache/plan_qwen2_28_p6578d306_3093669376_1779077685862848337_f1_c2048_b256_u256.json"
+  },
+  "context": 2048,
+  "model": {
+    "architecture": "qwen2",
+    "expert_count": 0,
+    "file_type": 1,
+    "layer_count": 28,
+    "mtime_ns": 1779077685862848337,
+    "path": "{models}/Qwen2.5-1.5B-Instruct-F16.gguf",
+    "size": 3093669376
+  },
+  "parent_prototype": "G1-adaptive-static-slo",
+  "phases": {
+    "decode": {
+      "body_boundary_count": 29,
+      "body_max_runtime_ms": 1.914733,
+      "candidate_count": 30,
+      "candidate_runtime_ms": [
+        1.907053,
+        1.914733,
+        1.612512,
+        1.533469,
+        1.527774,
+        1.544222,
+        1.528349,
+        1.541501,
+        1.536158,
+        1.530237,
+        1.533789,
+        1.842186,
+        1.63357,
+        1.535389,
+        1.538333,
+        1.538398,
+        1.538685,
+        1.54403,
+        1.529629,
+        1.526141,
+        1.513917,
+        1.843626,
+        1.512988,
+        1.519836,
+        1.514748,
+        1.519709,
+        1.512253,
+        1.822409,
+        0.030625,
+        10.914997
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "end_boundary": 0,
+          "estimated_runtime_ms": 1.907053,
+          "start_boundary": 0,
+          "terminal": false
+        },
+        {
+          "chunk_id": 1,
+          "end_boundary": 1,
+          "estimated_runtime_ms": 1.914733,
+          "start_boundary": 1,
+          "terminal": false
+        },
+        {
+          "chunk_id": 2,
+          "end_boundary": 2,
+          "estimated_runtime_ms": 1.612512,
+          "start_boundary": 2,
+          "terminal": false
+        },
+        {
+          "chunk_id": 3,
+          "end_boundary": 3,
+          "estimated_runtime_ms": 1.533469,
+          "start_boundary": 3,
+          "terminal": false
+        },
+        {
+          "chunk_id": 4,
+          "end_boundary": 4,
+          "estimated_runtime_ms": 1.527774,
+          "start_boundary": 4,
+          "terminal": false
+        },
+        {
+          "chunk_id": 5,
+          "end_boundary": 5,
+          "estimated_runtime_ms": 1.544222,
+          "start_boundary": 5,
+          "terminal": false
+        },
+        {
+          "chunk_id": 6,
+          "end_boundary": 6,
+          "estimated_runtime_ms": 1.528349,
+          "start_boundary": 6,
+          "terminal": false
+        },
+        {
+          "chunk_id": 7,
+          "end_boundary": 7,
+          "estimated_runtime_ms": 1.541501,
+          "start_boundary": 7,
+          "terminal": false
+        },
+        {
+          "chunk_id": 8,
+          "end_boundary": 8,
+          "estimated_runtime_ms": 1.536158,
+          "start_boundary": 8,
+          "terminal": false
+        },
+        {
+          "chunk_id": 9,
+          "end_boundary": 9,
+          "estimated_runtime_ms": 1.530237,
+          "start_boundary": 9,
+          "terminal": false
+        },
+        {
+          "chunk_id": 10,
+          "end_boundary": 10,
+          "estimated_runtime_ms": 1.533789,
+          "start_boundary": 10,
+          "terminal": false
+        },
+        {
+          "chunk_id": 11,
+          "end_boundary": 11,
+          "estimated_runtime_ms": 1.842186,
+          "start_boundary": 11,
+          "terminal": false
+        },
+        {
+          "chunk_id": 12,
+          "end_boundary": 12,
+          "estimated_runtime_ms": 1.63357,
+          "start_boundary": 12,
+          "terminal": false
+        },
+        {
+          "chunk_id": 13,
+          "end_boundary": 13,
+          "estimated_runtime_ms": 1.535389,
+          "start_boundary": 13,
+          "terminal": false
+        },
+        {
+          "chunk_id": 14,
+          "end_boundary": 14,
+          "estimated_runtime_ms": 1.538333,
+          "start_boundary": 14,
+          "terminal": false
+        },
+        {
+          "chunk_id": 15,
+          "end_boundary": 15,
+          "estimated_runtime_ms": 1.538398,
+          "start_boundary": 15,
+          "terminal": false
+        },
+        {
+          "chunk_id": 16,
+          "end_boundary": 16,
+          "estimated_runtime_ms": 1.538685,
+          "start_boundary": 16,
+          "terminal": false
+        },
+        {
+          "chunk_id": 17,
+          "end_boundary": 17,
+          "estimated_runtime_ms": 1.54403,
+          "start_boundary": 17,
+          "terminal": false
+        },
+        {
+          "chunk_id": 18,
+          "end_boundary": 18,
+          "estimated_runtime_ms": 1.529629,
+          "start_boundary": 18,
+          "terminal": false
+        },
+        {
+          "chunk_id": 19,
+          "end_boundary": 19,
+          "estimated_runtime_ms": 1.526141,
+          "start_boundary": 19,
+          "terminal": false
+        },
+        {
+          "chunk_id": 20,
+          "end_boundary": 20,
+          "estimated_runtime_ms": 1.513917,
+          "start_boundary": 20,
+          "terminal": false
+        },
+        {
+          "chunk_id": 21,
+          "end_boundary": 21,
+          "estimated_runtime_ms": 1.843626,
+          "start_boundary": 21,
+          "terminal": false
+        },
+        {
+          "chunk_id": 22,
+          "end_boundary": 22,
+          "estimated_runtime_ms": 1.512988,
+          "start_boundary": 22,
+          "terminal": false
+        },
+        {
+          "chunk_id": 23,
+          "end_boundary": 23,
+          "estimated_runtime_ms": 1.519836,
+          "start_boundary": 23,
+          "terminal": false
+        },
+        {
+          "chunk_id": 24,
+          "end_boundary": 24,
+          "estimated_runtime_ms": 1.514748,
+          "start_boundary": 24,
+          "terminal": false
+        },
+        {
+          "chunk_id": 25,
+          "end_boundary": 25,
+          "estimated_runtime_ms": 1.519709,
+          "start_boundary": 25,
+          "terminal": false
+        },
+        {
+          "chunk_id": 26,
+          "end_boundary": 26,
+          "estimated_runtime_ms": 1.512253,
+          "start_boundary": 26,
+          "terminal": false
+        },
+        {
+          "chunk_id": 27,
+          "end_boundary": 27,
+          "estimated_runtime_ms": 1.822409,
+          "start_boundary": 27,
+          "terminal": false
+        },
+        {
+          "chunk_id": 28,
+          "end_boundary": 28,
+          "estimated_runtime_ms": 0.030625,
+          "start_boundary": 28,
+          "terminal": false
+        },
+        {
+          "chunk_id": 29,
+          "end_boundary": 29,
+          "estimated_runtime_ms": 10.914997,
+          "start_boundary": 29,
+          "terminal": true
+        }
+      ],
+      "encoded_map": "0:1.907053,1:1.914733,2:1.612512,3:1.533469,4:1.527774,5:1.544222,6:1.528349,7:1.541501,8:1.536158,9:1.530237,10:1.533789,11:1.842186,12:1.633570,13:1.535389,14:1.538333,15:1.538398,16:1.538685,17:1.544030,18:1.529629,19:1.526141,20:1.513917,21:1.843626,22:1.512988,23:1.519836,24:1.514748,25:1.519709,26:1.512253,27:1.822409,28:0.030625,29:10.914997",
+      "terminal_boundary": 29,
+      "terminal_runtime_ms": 10.914997
+    },
+    "prefill": {
+      "body_boundary_count": 57,
+      "body_max_runtime_ms": 2.333661,
+      "candidate_count": 58,
+      "candidate_runtime_ms": [
+        0.323085,
+        2.006897,
+        0.388912,
+        2.012785,
+        0.391503,
+        1.919469,
+        0.398991,
+        1.760583,
+        0.396784,
+        1.988783,
+        0.394864,
+        2.000944,
+        0.398448,
+        2.00056,
+        0.393456,
+        2.010993,
+        0.397136,
+        1.774248,
+        0.395152,
+        1.996752,
+        0.393424,
+        1.911277,
+        0.391408,
+        2.003473,
+        0.401968,
+        2.015216,
+        0.410768,
+        2.002961,
+        0.413232,
+        2.029297,
+        0.408017,
+        2.333661,
+        0.409872,
+        2.154551,
+        0.500276,
+        2.102516,
+        0.4084,
+        2.021873,
+        0.412625,
+        2.005745,
+        0.407312,
+        2.118357,
+        0.408944,
+        1.997072,
+        0.40936,
+        1.993968,
+        0.406353,
+        2.009233,
+        0.393648,
+        2.156054,
+        0.407473,
+        1.940526,
+        0.411184,
+        1.995824,
+        0.374639,
+        1.453915,
+        0.038498,
+        11.66882
+      ],
+      "chunks": [
+        {
+          "chunk_id": 0,
+          "end_boundary": 0,
+          "estimated_runtime_ms": 0.323085,
+          "start_boundary": 0,
+          "terminal": false
+        },
+        {
+          "chunk_id": 1,
+          "end_boundary": 1,
+          "estimated_runtime_ms": 2.006897,
+          "start_boundary": 1,
+          "terminal": false
+        },
+        {
+          "chunk_id": 2,
+          "end_boundary": 2,
+          "estimated_runtime_ms": 0.388912,
+          "start_boundary": 2,
+          "terminal": false
+        },
+        {
+          "chunk_id": 3,
+          "end_boundary": 3,
+          "estimated_runtime_ms": 2.012785,
+          "start_boundary": 3,
+          "terminal": false
+        },
+        {
+          "chunk_id": 4,
+          "end_boundary": 4,
+          "estimated_runtime_ms": 0.391503,
+          "start_boundary": 4,
+          "terminal": false
+        },
+        {
+          "chunk_id": 5,
+          "end_boundary": 5,
+          "estimated_runtime_ms": 1.919469,
+          "start_boundary": 5,
+          "terminal": false
+        },
+        {
+          "chunk_id": 6,
+          "end_boundary": 6,
+          "estimated_runtime_ms": 0.398991,
+          "start_boundary": 6,
+          "terminal": false
+        },
+        {
+          "chunk_id": 7,
+          "end_boundary": 7,
+          "estimated_runtime_ms": 1.760583,
+          "start_boundary": 7,
+          "terminal": false
+        },
+        {
+          "chunk_id": 8,
+          "end_boundary": 8,
+          "estimated_runtime_ms": 0.396784,
+          "start_boundary": 8,
+          "terminal": false
+        },
+        {
+          "chunk_id": 9,
+          "end_boundary": 9,
+          "estimated_runtime_ms": 1.988783,
+          "start_boundary": 9,
+          "terminal": false
+        },
+        {
+          "chunk_id": 10,
+          "end_boundary": 10,
+          "estimated_runtime_ms": 0.394864,
+          "start_boundary": 10,
+          "terminal": false
+        },
+        {
+          "chunk_id": 11,
+          "end_boundary": 11,
+          "estimated_runtime_ms": 2.000944,
+          "start_boundary": 11,
+          "terminal": false
+        },
+        {
+          "chunk_id": 12,
+          "end_boundary": 12,
+          "estimated_runtime_ms": 0.398448,
+          "start_boundary": 12,
+          "terminal": false
+        },
+        {
+          "chunk_id": 13,
+          "end_boundary": 13,
+          "estimated_runtime_ms": 2.00056,
+          "start_boundary": 13,
+          "terminal": false
+        },
+        {
+          "chunk_id": 14,
+          "end_boundary": 14,
+          "estimated_runtime_ms": 0.393456,
+          "start_boundary": 14,
+          "terminal": false
+        },
+        {
+          "chunk_id": 15,
+          "end_boundary": 15,
+          "estimated_runtime_ms": 2.010993,
+          "start_boundary": 15,
+          "terminal": false
+        },
+        {
+          "chunk_id": 16,
+          "end_boundary": 16,
+          "estimated_runtime_ms": 0.397136,
+          "start_boundary": 16,
+          "terminal": false
+        },
+        {
+          "chunk_id": 17,
+          "end_boundary": 17,
+          "estimated_runtime_ms": 1.774248,
+          "start_boundary": 17,
+          "terminal": false
+        },
+        {
+          "chunk_id": 18,
+          "end_boundary": 18,
+          "estimated_runtime_ms": 0.395152,
+          "start_boundary": 18,
+          "terminal": false
+        },
+        {
+          "chunk_id": 19,
+          "end_boundary": 19,
+          "estimated_runtime_ms": 1.996752,
+          "start_boundary": 19,
+          "terminal": false
+        },
+        {
+          "chunk_id": 20,
+          "end_boundary": 20,
+          "estimated_runtime_ms": 0.393424,
+          "start_boundary": 20,
+          "terminal": false
+        },
+        {
+          "chunk_id": 21,
+          "end_boundary": 21,
+          "estimated_runtime_ms": 1.911277,
+          "start_boundary": 21,
+          "terminal": false
+        },
+        {
+          "chunk_id": 22,
+          "end_boundary": 22,
+          "estimated_runtime_ms": 0.391408,
+          "start_boundary": 22,
+          "terminal": false
+        },
+        {
+          "chunk_id": 23,
+          "end_boundary": 23,
+          "estimated_runtime_ms": 2.003473,
+          "start_boundary": 23,
+          "terminal": false
+        },
+        {
+          "chunk_id": 24,
+          "end_boundary": 24,
+          "estimated_runtime_ms": 0.401968,
+          "start_boundary": 24,
+          "terminal": false
+        },
+        {
+          "chunk_id": 25,
+          "end_boundary": 25,
+          "estimated_runtime_ms": 2.015216,
+          "start_boundary": 25,
+          "terminal": false
+        },
+        {
+          "chunk_id": 26,
+          "end_boundary": 26,
+          "estimated_runtime_ms": 0.410768,
+          "start_boundary": 26,
+          "terminal": false
+        },
+        {
+          "chunk_id": 27,
+          "end_boundary": 27,
+          "estimated_runtime_ms": 2.002961,
+          "start_boundary": 27,
+          "terminal": false
+        },
+        {
+          "chunk_id": 28,
+          "end_boundary": 28,
+          "estimated_runtime_ms": 0.413232,
+          "start_boundary": 28,
+          "terminal": false
+        },
+        {
+          "chunk_id": 29,
+          "end_boundary": 29,
+          "estimated_runtime_ms": 2.029297,
+          "start_boundary": 29,
+          "terminal": false
+        },
+        {
+          "chunk_id": 30,
+          "end_boundary": 30,
+          "estimated_runtime_ms": 0.408017,
+          "start_boundary": 30,
+          "terminal": false
+        },
+        {
+          "chunk_id": 31,
+          "end_boundary": 31,
+          "estimated_runtime_ms": 2.333661,
+          "start_boundary": 31,
+          "terminal": false
+        },
+        {
+          "chunk_id": 32,
+          "end_boundary": 32,
+          "estimated_runtime_ms": 0.409872,
+          "start_boundary": 32,
+          "terminal": false
+        },
+        {
+          "chunk_id": 33,
+          "end_boundary": 33,
+          "estimated_runtime_ms": 2.154551,
+          "start_boundary": 33,
+          "terminal": false
+        },
+        {
+          "chunk_id": 34,
+          "end_boundary": 34,
+          "estimated_runtime_ms": 0.500276,
+          "start_boundary": 34,
+          "terminal": false
+        },
+        {
+          "chunk_id": 35,
+          "end_boundary": 35,
+          "estimated_runtime_ms": 2.102516,
+          "start_boundary": 35,
+          "terminal": false
+        },
+        {
+          "chunk_id": 36,
+          "end_boundary": 36,
+          "estimated_runtime_ms": 0.4084,
+          "start_boundary": 36,
+          "terminal": false
+        },
+        {
+          "chunk_id": 37,
+          "end_boundary": 37,
+          "estimated_runtime_ms": 2.021873,
+          "start_boundary": 37,
+          "terminal": false
+        },
+        {
+          "chunk_id": 38,
+          "end_boundary": 38,
+          "estimated_runtime_ms": 0.412625,
+          "start_boundary": 38,
+          "terminal": false
+        },
+        {
+          "chunk_id": 39,
+          "end_boundary": 39,
+          "estimated_runtime_ms": 2.005745,
+          "start_boundary": 39,
+          "terminal": false
+        },
+        {
+          "chunk_id": 40,
+          "end_boundary": 40,
+          "estimated_runtime_ms": 0.407312,
+          "start_boundary": 40,
+          "terminal": false
+        },
+        {
+          "chunk_id": 41,
+          "end_boundary": 41,
+          "estimated_runtime_ms": 2.118357,
+          "start_boundary": 41,
+          "terminal": false
+        },
+        {
+          "chunk_id": 42,
+          "end_boundary": 42,
+          "estimated_runtime_ms": 0.408944,
+          "start_boundary": 42,
+          "terminal": false
+        },
+        {
+          "chunk_id": 43,
+          "end_boundary": 43,
+          "estimated_runtime_ms": 1.997072,
+          "start_boundary": 43,
+          "terminal": false
+        },
+        {
+          "chunk_id": 44,
+          "end_boundary": 44,
+          "estimated_runtime_ms": 0.40936,
+          "start_boundary": 44,
+          "terminal": false
+        },
+        {
+          "chunk_id": 45,
+          "end_boundary": 45,
+          "estimated_runtime_ms": 1.993968,
+          "start_boundary": 45,
+          "terminal": false
+        },
+        {
+          "chunk_id": 46,
+          "end_boundary": 46,
+          "estimated_runtime_ms": 0.406353,
+          "start_boundary": 46,
+          "terminal": false
+        },
+        {
+          "chunk_id": 47,
+          "end_boundary": 47,
+          "estimated_runtime_ms": 2.009233,
+          "start_boundary": 47,
+          "terminal": false
+        },
+        {
+          "chunk_id": 48,
+          "end_boundary": 48,
+          "estimated_runtime_ms": 0.393648,
+          "start_boundary": 48,
+          "terminal": false
+        },
+        {
+          "chunk_id": 49,
+          "end_boundary": 49,
+          "estimated_runtime_ms": 2.156054,
+          "start_boundary": 49,
+          "terminal": false
+        },
+        {
+          "chunk_id": 50,
+          "end_boundary": 50,
+          "estimated_runtime_ms": 0.407473,
+          "start_boundary": 50,
+          "terminal": false
+        },
+        {
+          "chunk_id": 51,
+          "end_boundary": 51,
+          "estimated_runtime_ms": 1.940526,
+          "start_boundary": 51,
+          "terminal": false
+        },
+        {
+          "chunk_id": 52,
+          "end_boundary": 52,
+          "estimated_runtime_ms": 0.411184,
+          "start_boundary": 52,
+          "terminal": false
+        },
+        {
+          "chunk_id": 53,
+          "end_boundary": 53,
+          "estimated_runtime_ms": 1.995824,
+          "start_boundary": 53,
+          "terminal": false
+        },
+        {
+          "chunk_id": 54,
+          "end_boundary": 54,
+          "estimated_runtime_ms": 0.374639,
+          "start_boundary": 54,
+          "terminal": false
+        },
+        {
+          "chunk_id": 55,
+          "end_boundary": 55,
+          "estimated_runtime_ms": 1.453915,
+          "start_boundary": 55,
+          "terminal": false
+        },
+        {
+          "chunk_id": 56,
+          "end_boundary": 56,
+          "estimated_runtime_ms": 0.038498,
+          "start_boundary": 56,
+          "terminal": false
+        },
+        {
+          "chunk_id": 57,
+          "end_boundary": 57,
+          "estimated_runtime_ms": 11.66882,
+          "start_boundary": 57,
+          "terminal": true
+        }
+      ],
+      "encoded_map": "0:0.323085,1:2.006897,2:0.388912,3:2.012785,4:0.391503,5:1.919469,6:0.398991,7:1.760583,8:0.396784,9:1.988783,10:0.394864,11:2.000944,12:0.398448,13:2.000560,14:0.393456,15:2.010993,16:0.397136,17:1.774248,18:0.395152,19:1.996752,20:0.393424,21:1.911277,22:0.391408,23:2.003473,24:0.401968,25:2.015216,26:0.410768,27:2.002961,28:0.413232,29:2.029297,30:0.408017,31:2.333661,32:0.409872,33:2.154551,34:0.500276,35:2.102516,36:0.408400,37:2.021873,38:0.412625,39:2.005745,40:0.407312,41:2.118357,42:0.408944,43:1.997072,44:0.409360,45:1.993968,46:0.406353,47:2.009233,48:0.393648,49:2.156054,50:0.407473,51:1.940526,52:0.411184,53:1.995824,54:0.374639,55:1.453915,56:0.038498,57:11.668820",
+      "terminal_boundary": 57,
+      "terminal_runtime_ms": 11.66882
+    }
+  },
+  "policy": "tail_aware_slo_online",
+  "profile_backend": {
+    "policy": "profile_static",
+    "policy_library": "{repo}/build/policy/libedgepace_policy.so",
+    "request_payload": "{repo}/requests/text_4tok.json",
+    "requests": 3,
+    "runtime": "edgepace",
+    "server": "{repo}/build/llama/bin/llama-server"
+  },
+  "profile_statistic": "maximum submit-to-complete duration over three startup requests",
+  "prototype": "edgepace-fine-plan",
+  "schema_version": "edgepace.g2.tail_aware_cut.v1",
+  "selection": {
+    "priority_independent": true,
+    "slo_independent_geometry": true,
+    "strategy": "preserve_every_legal_boundary",
+    "terminal_policy": "isolate_final_output_tail"
+  },
+  "slo_assessment": {
+    "admissible": true,
+    "blockers": [],
+    "control_reference_ms": 11.111,
+    "deadline_ms": 33.333,
+    "freshness_ms": 1800.0,
+    "max_tokens": 4,
+    "phases": {
+      "decode": {
+        "body_max_runtime_ms": 1.914733,
+        "body_within_control_reference": true,
+        "terminal_runtime_ms": 10.914997,
+        "terminal_within_control_reference": true,
+        "terminal_within_hard_deadline": true
+      },
+      "prefill": {
+        "body_max_runtime_ms": 2.333661,
+        "body_within_control_reference": true,
+        "terminal_runtime_ms": 11.66882,
+        "terminal_within_control_reference": false,
+        "terminal_within_hard_deadline": true
+      }
+    },
+    "profiled_request_service_ms": 301.237149,
+    "reference_role": "body feasibility check only; never a coarsening target",
+    "request_service_within_freshness": true
+  },
+  "ubatch": 256
+}

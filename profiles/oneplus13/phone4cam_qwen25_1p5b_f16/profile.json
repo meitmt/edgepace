@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "name": "oneplus13_phone4cam_qwen25_1p5b_f16",
+  "status": "profiled",
+  "created": "2026-10-25T21:31:26",
+  "source": "{repo}/runs/android_profile_phone4cam_20261025/measure",
+  "workload": {
+    "model": "/data/local/tmp/geniex/models/Qwen2.5-1.5B-Instruct-F16/Qwen2.5-1.5B-Instruct-F16.gguf",
+    "plan": "cut_plan.json",
+    "foreground": "/data/local/tmp/edgepace/bin/fourcam_phone --video /data/local/tmp/edgepace/media/input_loop70s.mp4 --frames {frames} --warmup-frames 12 --period-us 33333 --deadline-us 33333 --condition llm --main-cpu 0 --worker-cpus 4,5,6,7 --output {phase_dir}/foreground.csv --semantic-output {phase_dir}/semantic_records.csv --task-page {task_page} --progress-page {phase_dir}/progress.page",
+    "request": "{repo}/requests/text_4tok.json",
+    "llm_period_ms": 1600.0,
+    "llm_align": "frame",
+    "parallel": 1,
+    "llm_extra_streams": 0,
+    "period_us": 33333,
+    "deadline_us": 33333,
+    "freshness_ms": 1800.0,
+    "max_tokens": 4,
+    "context_size": 2048,
+    "batch_size": 256,
+    "ubatch_size": 256,
+    "prompt_cache": false,
+    "device": "android",
+    "device_root": "/data/local/tmp/edgepace",
+    "adb": "adb",
+    "adb_serial": null
+  },
+  "sampler_args": [
+    "--gate-margin",
+    "0.05",
+    "--gate-persistence",
+    "3",
+    "--gate-min-ms",
+    "6",
+    "--sample-interval-ms",
+    "4",
+    "--gate-persistence",
+    "2",
+    "--stall-threshold",
+    "1.62538",
+    "--miss-rate-threshold",
+    "2.29729e+06",
+    "--mpki-threshold",
+    "0.260904"
+  ],
+  "server_env": {
+    "EDGEPACE_ONLINE_RHO": "1",
+    "EDGEPACE_RHO_W_DEMAND": "0.15",
+    "EDGEPACE_RHO_W_STALL": "0.7",
+    "EDGEPACE_RHO_W_URGENCY": "0.7",
+    "EDGEPACE_RHO_THETA_LOW": "0.5319",
+    "EDGEPACE_RHO_THETA_HIGH": "0.8319",
+    "EDGEPACE_RHO_HORIZON_MS": "24"
+  },
+  "decision": {
+    "status": "profiled",
+    "objective": "miss",
+    "min_retention": 0.6,
+    "miss_budget": 0.02,
+    "miss_tolerance": 0.0011299435028248588,
+    "horizon_ms": 24.0,
+    "miss_rate": 0.0022598870056497176,
+    "retention": 0.8548737907017163
+  },
+  "fingerprint": {
+    "device": "android",
+    "locked_clocks": "LOCKED_CLOCKS cpu=policy0=1996800 policy6=2649600 gpu=1100000000 ddr=4761000 llcc=1211000",
+    "binaries_sha256": {
+      "bin/llama-server": "c6ab2dea1d76411ea7e4e455e8e977a570add603c5ed9a46f18178bb6ffdaf82",
+      "lib/libedgepace_policy.so": "baeb8ffbcc28d6129858083791975b98ae6373c01120d5d731e603577544671d",
+      "bin/pmu_sampler": "5ceb14ee9e88bd0707e32e43f01620793a84e3f9e7f8fa4defc6c60687bba34a",
+      "lib/libggml-base.so": "a74816d6d80e08d01d9d78f074c4525ed907c3c91fbcec842a2923c3f7a60f1e",
+      "lib/libggml-hexagon.so": "50b4ca1b4397b92f9282887f8ce4098a5c01fc8e4c257e3a8d544e7e3d8a8d11",
+      "lib/libggml-htp-v79.so": "1019369acb0a4f77642ed85a40cd1f4918f1fe02aff17e1b2e333a68283151de",
+      "bin/edgepace_client": "b1d6549081e1f4b1a7235c109f645d0d4c57c0d0c4f420a7455ca39fe84f5d75"
+    },
+    "sampler_pmu": "--pmu-dir /sys/bus/event_source/devices/armv8_pmuv3 --stall-event stall --llc-event l2d_cache_lmiss_rd",
+    "model": {
+      "path": "/data/local/tmp/geniex/models/Qwen2.5-1.5B-Instruct-F16/Qwen2.5-1.5B-Instruct-F16.gguf",
+      "bytes": 3093669376,
+      "mtime_s": 1779077685
+    }
+  }
+}

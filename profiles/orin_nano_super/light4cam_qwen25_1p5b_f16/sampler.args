@@ -1,0 +1,16 @@
+--gate-margin
+0.05
+--gate-persistence
+3
+--gate-min-ms
+6
+--sample-interval-ms
+4
+--gate-persistence
+2
+--stall-threshold
+0.765297
+--miss-rate-threshold
+8.67706e+08
+--mpki-threshold
+77.3386

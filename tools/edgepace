@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+"""EdgePace command line (python/edgepace_cli.py); `edgepace --help`."""
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "python"))
+from edgepace_cli import main  # noqa: E402
+
+raise SystemExit(main())

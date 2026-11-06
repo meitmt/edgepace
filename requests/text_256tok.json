@@ -1,0 +1,14 @@
+{
+  "model": "local-model",
+  "temperature": 0,
+  "seed": 42,
+  "max_tokens": 256,
+  "ignore_eos": true,
+  "cache_prompt": false,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Write a detailed technical report about memory scheduling on embedded GPUs."
+    }
+  ]
+}

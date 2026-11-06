@@ -1,0 +1,10 @@
+# fetched or built, not versioned
+/llama.cpp/
+/build/
+/runs/
+/models/
+/media/
+/monitor/build/
+/client/build/
+__pycache__/
+*.pyc
